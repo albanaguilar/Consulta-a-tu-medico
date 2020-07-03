@@ -4,7 +4,7 @@
 	<title>Pregunta a tu medico</title>
 	<meta charset="utf-8">
 	<!-- Icono tab -->
-	<!-- <link rel="icon" type="image/png" href="img/Cerdito.ico"> -->
+	<link rel="icon" type="image/png" href="img/icono.ico">
 
 	<!-- Para evitar contenido duplicado en la web-->
 	<link rel=”canonical” href=”http://www.preguntaatumedico.com/” />
@@ -14,6 +14,9 @@
 
 	<!-- Material icons -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Vollkorn:wght@500&display=swap" rel="stylesheet">
 	
 	<!-- Materialize CSS -->
 	<link rel="stylesheet" type="text/css" href="css/materialize.css">
@@ -27,28 +30,45 @@
 </head>
 <body class="fondo">
 
-	<div class="w3-bar w3-black">
-		<a href="index.html" class="w3-bar-item w3-button">Información de la doctora</a>
-		<a href="info.html" class="w3-bar-item w3-button">Información para agendar</a>
-	  </div>
+	<!-- TITULO/NOMBRE-->
+	<header class="text-center pad2rem flex-box">
+		<div>
+			<img src="img/Foto.png" class="responsive-img imagen-dra">
+		</div>
+		<div>
+			<h1 class="font-titulos"> Ma. Del Rosario Cruz Nieto</h1>
+			<h4 class=" font-titulos">Médico Familiar</h4>
 
-	<!-- TITULO/NOMBRE DE LA DOCTORA-->
-	<header class="w3-panel w3-center " style="padding: 50px">
-		<h1 class="w3-xlarge w3-blue-grey">MEDICO FAMILIAR</h1>
-		<h1 > Ma. Del Rosario Cruz Nieto</h1>
+			<h5 class="font-negro font-secundario">30 años de experiencia</h5>
+			<h5 class="font-negro font-secundario">Jubilada del IMSS</h5>
+
+			<a href="https://drcn.youcanbook.me/" data-ycbm-modal="true" class="waves-effect waves-light boton color-boton">Agendar cita</a>
+		</div>
+
 	</header>
+	<!-- FIN TITULO/NOMBRE-->
 
+	<!-- INFORMACION DOCTORA-->
 	<main>
 		<section class="contenedor contenido">
 			<div class="contenido-main">
-				<h3 class="font-negro">Consulta medica en linea en tiempos de Covid-19</h3>
-				<h4 class="font-negro">30 años de experiencia</h4>
-				<h4 class="font-negro">Jubilada del IMSS</h4>
+				<h3 class="font-negro font-secundario">Consulta medica en linea en tiempos de Covid-19</h3>
 			</div>
-			<a class="waves-effect waves-light btn-large">Agendar cita</a>
+
+			<!-- Modal Trigger -->
+  			<a class="waves-effect waves-light btn color-boton modal-trigger boton-mod" href="#modal1">¿Por qué consultar en línea?</a>
+
+			  <!-- Modal Structure -->
+			<div id="modal1" class="modal">
+			  <div class="modal-content">
+			    <h4 class="font-negro text-center">¿Por qué consultar en línea?</h4>
+			    <p class="font-negro text-center">Existen varios motivos: <br>No encuentra médico <br>Tiene temor de ir a un hospital <br>Motivos ecónomicos <br>El clima <br>Es mas fácil no salir de casa <br>El Covid-19</p>
+			  </div>
+  			</div>
 
 		</section>
 	</main>
+	<!-- FIN INFORMACION DOCTORA-->
 
 	
 
